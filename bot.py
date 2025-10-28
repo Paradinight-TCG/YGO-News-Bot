@@ -41,9 +41,10 @@ async def check_tweets():
     tweet_url = get_latest_tweet()
     if tweet_url and tweet_url != last_tweet:
         last_tweet = tweet_url
-        channel = bot.get_channel(CHANNEL_ID)
+        channel = bot.get_channel(1391796864646516896)
         if channel:
             await channel.send(f"Nouveau post de @ygorganization : {tweet_url}")
 
 
 bot.run(TOKEN)
+
